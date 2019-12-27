@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a69a4"
+    tools:context=".ThirtythActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="332dp"
+        android:layout_height="435dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bestText"
+        app:layout_constraintVertical_bias="0.503">
+
+        <ImageView
+            android:id="@+id/imageView00"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView01"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView02"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/greyball" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="increaseScor"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/greyball" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Süre: 60"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <TextView
+            android:id="@+id/scorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skor: 0"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/bestText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="67dp"
+        android:gravity="center"
+        android:text="Level 13"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/planText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="67dp"
+        android:gravity="center"
+        android:text="Hedef:30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:onClick="exitClick"
+        android:text="ÇIKIŞ"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:onClick="restartClick"
+        android:text="Yeniden Başlat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exitButton"
+        app:layout_constraintTop_toBottomOf="@+id/line2ImageView" />
+
+    <ImageView
+        android:id="@+id/line2ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/exitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/line1ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/line" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
